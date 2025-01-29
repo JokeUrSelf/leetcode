@@ -1,4 +1,5 @@
-// https://leetcode.com/problems/zigzag-conversion/
+// The problem description: https://leetcode.com/problems/zigzag-conversion/
+// Explanation: https://leetcode.com/problems/zigzag-conversion/solutions/6346159/clean-compact-solution-no-direction-stat-t8a9/
 
 /**
  * @param {string} s
@@ -8,7 +9,7 @@
 var convert = function(s, rows) {
     if (rows === 1) return s
 
-    newLetters = ""
+    let newLetters = ""
 
     for (let row = 0; row < rows; row++) {
         for (let i = row, j = 0; s[i]; j++) {
